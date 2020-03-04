@@ -1,0 +1,40 @@
+logging:
+  config: classpath:logback.xml
+  path: d:/logs
+server:
+  port: 9999
+  session-timeout: 60
+mybatis:
+     mapperLocations: classpath:/com/frame/*/dao/*.xml
+     typeAliasesPackage: com.frame.*
+     mapperScanPackage: com.frame.*
+     configLocation: classpath:/mybatis-config.xml
+spring:
+    datasource:
+        name: db
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://rm-2ze8h603ii1zfehv5so.mysql.rds.aliyuncs.com
+        username: cjpt
+        password: cjpt@123
+        driver-class-name: com.mysql.jdbc.Driver
+        minIdle: 5
+        maxActive: 100
+        initialSize: 10
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 50
+        removeAbandoned: true
+        filters: stat # ,wall,log4j # \u914D\u7F6E\u76D1\u63A7\u7EDF\u8BA1\u62E6\u622A\u7684filters\uFF0C\u53BB\u6389\u540E\u76D1\u63A7\u754C\u9762sql\u65E0\u6CD5\u7EDF\u8BA1\uFF0C'wall'\u7528\u4E8E\u9632\u706B\u5899
+        connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 # \u901A\u8FC7connectProperties\u5C5E\u6027\u6765\u6253\u5F00mergeSql\u529F\u80FD\uFF1B\u6162SQL\u8BB0\u5F55
+        useGlobalDataSourceStat: true # \u5408\u5E76\u591A\u4E2ADruidDataSource\u7684\u76D1\u63A7\u6570\u636E
+        druidLoginName: wjf # \u767B\u5F55druid\u7684\u8D26\u53F7
+        druidPassword: wjf # \u767B\u5F55druid\u7684\u5BC6\u7801
+        cachePrepStmts: true  # \u5F00\u542F\u4E8C\u7EA7\u7F13\u5B58
+    session:
+        store-type: none
