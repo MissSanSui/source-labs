@@ -1,19 +1,35 @@
 export default [
-  // { 
-  //   path: '/', 
-  //   component: '../layouts/BasicLayout',
-  //   routes: [
-  //     { 
-  //       path: '/', 
-  //       // redirect: '/dashboard/analysis', 
-  //       // authority: ['admin', 'user'] },
-  //       component: './Home'
-  //     }
-  //   ]
-  // },
-  // { path: '/meetup', component: './Meetup' },
-  
-  // user
+ // 路由配置--by Sansui
+
+//  {
+//   path: '/',
+//   component: '../layouts/BasicLayout',
+//   Routes: ['src/pages/Authorized'],
+//   routes: [
+//     { 
+//       // 首页路由配置
+//       path: '/', 
+//       // name: 'home',
+//       component: './Home'
+//     },
+//     { 
+//       // easyfusion页面
+//       // path: '/easyfusion', 
+//       // component: './Easyfusion'
+//     },
+//     { 
+//       // meetup页面
+//       path: '/meetup', 
+//       name: 'meetup',
+//       component: './Meetup'
+//     },
+//     { 
+//       // 关于页面
+//       // path: '/about', 
+//       // component: './About'
+//     }
+//   ]
+// },
   {
     path: '/user',
     component: '../layouts/UserLayout',
@@ -34,21 +50,25 @@ export default [
   // app
   {
     path: '/',
-    component: '../layouts/BasicLayout',
+    component: '../layouts/HomeLayout',
     Routes: ['src/pages/Authorized'],
     routes: [
-      // dashboard
       { 
         path: '/', 
-        // redirect: '/dashboard/analysis', 
-        // authority: ['admin', 'user'] },
         component: './Home'
+      },
+      { 
+        // meetup页面
+        path: '/meetup', 
+        name: 'meetup',
+        component: './Meetup'
       },
       // { path: '/', redirect: '/dashboard/analysis', authority: ['admin', 'user'] },
       {
         path: '/dashboard',
         name: 'dashboard',
         icon: 'dashboard',
+        authority: ['AAAA'],
         routes: [
           {
             path: '/dashboard/analysis',

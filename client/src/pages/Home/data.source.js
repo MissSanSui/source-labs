@@ -78,7 +78,7 @@ export const Content00DataSource = {
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
-    children: [{ name: 'title', children: '产品与服务' }],
+    children: [{ name: 'title', children: 'Join us will get the benefit' }],
   },
   childWrapper: {
     className: 'content0-block-wrapper',
@@ -100,9 +100,9 @@ export const Content00DataSource = {
             {
               name: 'title',
               className: 'content0-block-title',
-              children: '一站式业务接入',
+              children: '获得荣誉感',
             },
-            { name: 'content', children: '支付、结算、核算接入产品效率翻四倍' },
+            { name: 'content', children: '从技术试验中迸发灵感，无论是IT技术还是方案架构。在技术和社交能力上,最大限度的提升自己。' },
           ],
         },
       },
@@ -123,11 +123,11 @@ export const Content00DataSource = {
             {
               name: 'title',
               className: 'content0-block-title',
-              children: '一站式事中风险监控',
+              children: '结交新面孔',
             },
             {
               name: 'content',
-              children: '在所有需求配置环节事前风险控制和质量控制能力',
+              children: '与国内顶尖的工程师讨论、学习。与IT网红一起探讨学习新颖的软件架构方向。',
             },
           ],
         },
@@ -149,11 +149,11 @@ export const Content00DataSource = {
             {
               name: 'title',
               className: 'content0-block-title',
-              children: '一站式数据运营',
+              children: '社会认证',
             },
             {
               name: 'content',
-              children: '沉淀产品接入效率和运营小二工作效率数据',
+              children: '收集海内外最新的技术信息，分享优秀的解决方案。获得评级认证，通向成功的之路。',
             },
           ],
         },

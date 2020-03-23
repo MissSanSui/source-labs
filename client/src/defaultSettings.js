@@ -9,7 +9,7 @@ module.exports = {
   "menu": {
     "disableLocal": false
   },
-  "title": "Ant Design Pro",
+  "title": "硕思 | Source Lab",
   "pwa": false,
   "iconfontUrl": "",
   "collapse": true

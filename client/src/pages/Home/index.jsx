@@ -8,7 +8,7 @@ import Banner0 from './Banner0';
 import Content0 from './Content0';
 import Teams2 from './Teams2';
 import Content12 from './Content12';
-import Footer1 from './Footer1';
+// import Footer1 from './Footer1';
 
 import {
   // Nav30DataSource,
@@ -16,7 +16,7 @@ import {
   Content00DataSource,
   Teams20DataSource,
   Content120DataSource,
-  Footer10DataSource,
+  // Footer10DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
 
@@ -86,15 +86,15 @@ export default class Home extends React.Component {
         dataSource={Content120DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Footer1
-        id="Footer1_0"
-        key="Footer1_0"
-        dataSource={Footer10DataSource}
-        isMobile={this.state.isMobile}
-      />,
+      // <Footer1
+      //   id="Footer1_0"
+      //   key="Footer1_0"
+      //   dataSource={Footer10DataSource}
+      //   isMobile={this.state.isMobile}
+      // />,
     ];
     return (
-      <div
+      <div style={{ margin: '-24px -24px 0' }}
         className="templates-wrapper"
         ref={(d) => {
           this.dom = d;
