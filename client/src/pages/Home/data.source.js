@@ -71,6 +71,10 @@ export const Banner00DataSource = {
     children2: '开放',
     children3: '水准',
   },
+  button: {
+    className: 'banner0-button',
+    children: '发现 IT Meetup'
+  }
 };
 export const Content00DataSource = {
   wrapper: { className: 'home-page-wrapper content0-wrapper' },
@@ -543,7 +547,7 @@ export const Footer10DataSource = {
         title: {
           className: 'logo',
           children:
-            'https://zos.alipayobjects.com/rmsportal/qqaimmXZVSwAhpL.svg',
+            '../assets/logo.svg',
         },
         childWrapper: {
           className: 'slogan',
@@ -605,7 +609,7 @@ export const Footer10DataSource = {
     children: (
       <>
         <span>
-          ©2018 by <a href="https://motion.ant.design">Ant Motion</a> All Rights
+          ©2020 by <a href="">硕思 | Source Lab | 北京易观科技有限公司</a> All Rights
           Reserved
         </span>
       </>

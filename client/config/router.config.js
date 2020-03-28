@@ -1,38 +1,9 @@
 export default [
  // 路由配置--by Sansui
-
-//  {
-//   path: '/',
-//   component: '../layouts/BasicLayout',
-//   Routes: ['src/pages/Authorized'],
-//   routes: [
-//     { 
-//       // 首页路由配置
-//       path: '/', 
-//       // name: 'home',
-//       component: './Home'
-//     },
-//     { 
-//       // easyfusion页面
-//       // path: '/easyfusion', 
-//       // component: './Easyfusion'
-//     },
-//     { 
-//       // meetup页面
-//       path: '/meetup', 
-//       name: 'meetup',
-//       component: './Meetup'
-//     },
-//     { 
-//       // 关于页面
-//       // path: '/about', 
-//       // component: './About'
-//     }
-//   ]
-// },
   {
     path: '/user',
     component: '../layouts/UserLayout',
+    authority: ['AAAA'],
     routes: [
       { path: '/user', redirect: '/user/login' },
       { path: '/user/login', name: 'login', component: './User/Login' },
@@ -92,6 +63,7 @@ export default [
         path: '/form',
         icon: 'form',
         name: 'form',
+        authority: ['AAAA'],
         routes: [
           {
             path: '/form/basic-form',
@@ -138,6 +110,7 @@ export default [
         path: '/list',
         icon: 'table',
         name: 'list',
+        authority: ['AAAA'],
         routes: [
           {
             path: '/list/table-list',
@@ -186,6 +159,7 @@ export default [
         path: '/profile',
         name: 'profile',
         icon: 'profile',
+        authority: ['AAAA'],
         routes: [
           // profile
           {
@@ -210,6 +184,7 @@ export default [
         name: 'result',
         icon: 'check-circle-o',
         path: '/result',
+        authority: ['AAAA'],
         routes: [
           // result
           {
@@ -224,6 +199,7 @@ export default [
         name: 'exception',
         icon: 'warning',
         path: '/exception',
+        authority: ['AAAA'],
         routes: [
           // exception
           {
@@ -253,6 +229,7 @@ export default [
         name: 'account',
         icon: 'user',
         path: '/account',
+        authority: ['AAAA'],
         routes: [
           {
             path: '/account/center',
@@ -311,6 +288,7 @@ export default [
         name: 'editor',
         icon: 'highlight',
         path: '/editor',
+        authority: ['AAAA'],
         routes: [
           {
             path: '/editor/flow',

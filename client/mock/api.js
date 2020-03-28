@@ -1,7 +1,7 @@
 import mockjs from 'mockjs';
 
 const titles = [
-  'Alipay',
+  '第一期：存储与计算分离，京东在 Elasticsearch 上的实践',
   'Angular',
   'Ant Design',
   'Ant Design Pro',
@@ -35,13 +35,13 @@ const avatars2 = [
 ];
 
 const covers = [
-  'https://gw.alipayobjects.com/zos/rmsportal/uMfMFlvUuceEyPpotzlq.png',
+  'https://img.bagevent.com/resource/20200319/16242626478635.png?imageView2/2/w/1100/interlace/1/q/100',
   'https://gw.alipayobjects.com/zos/rmsportal/iZBVOIhGJiAnhplqjvZW.png',
   'https://gw.alipayobjects.com/zos/rmsportal/iXjVmWVHbCJAyqvDxdtx.png',
   'https://gw.alipayobjects.com/zos/rmsportal/gLaIAoVWTtLbBWZNYEMg.png',
 ];
 const desc = [
-  '那是一种内在的东西， 他们到达不了，也无法触及的',
+  '2015 年起 Elasticsearch 在京东开始大范围应用，本次分享会介绍 ES 在京东的使用场景，以及随着业务的飞速发展， ES 架构随之进行的升级改造历程；最终借助于 ChubaoFS 的使用，实现读写分离以大幅降低资源使用成本以及运维成本',
   '希望是一个好东西，也许是最好的，好东西是不会消亡的',
   '生命就像一盒巧克力，结果往往出人意料',
   '城镇中有那么多的酒馆，她却偏偏走进了我的酒馆',
