@@ -54,6 +54,11 @@ class Banner extends React.PureComponent {
           className="banner0-icon"
           key="icon"
         >
+          <div key="down" {...dataSource.down}>
+            {dataSource.down.children}
+            {/* <a className="banner0-downFront"/> */}
+          </div>
+
           <Icon type="down" />
         </TweenOne>
       </div>

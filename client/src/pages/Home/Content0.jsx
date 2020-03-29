@@ -12,13 +12,14 @@ class Content extends React.PureComponent {
       titleWrapper,
       page,
       OverPack: overPackData,
-      childWrapper,
+      devWrapper,
+      businessWrapper,
     } = dataSource;
     return (
       <div {...props} {...wrapper}>
         <div {...page}>
           <div {...titleWrapper}>
-            {titleWrapper.children.map(getChildrenToRender)}
+            {titleWrapper.children1.map(getChildrenToRender)}
           </div>
           <OverPack {...overPackData}>
             <QueueAnim
@@ -26,9 +27,32 @@ class Content extends React.PureComponent {
               key="block"
               leaveReverse
               component={Row}
-              componentProps={childWrapper}
+              componentProps={businessWrapper}
             >
-              {childWrapper.children.map((block, i) => {
+              {businessWrapper.children.map((block, i) => {
+                const { children: item, ...blockProps } = block;
+                return (
+                  <Col key={i.toString()} {...blockProps}>
+                    <div {...item}>
+                      {item.children.map(getChildrenToRender)}
+                    </div>
+                  </Col>
+                );
+              })}
+            </QueueAnim>
+          </OverPack>
+          <div {...titleWrapper}>
+            {titleWrapper.children2.map(getChildrenToRender)}
+          </div>
+          <OverPack {...overPackData}>
+            <QueueAnim
+              type="bottom"
+              key="block"
+              leaveReverse
+              component={Row}
+              componentProps={devWrapper}
+            >
+              {devWrapper.children.map((block, i) => {
                 const { children: item, ...blockProps } = block;
                 return (
                   <Col key={i.toString()} {...blockProps}>
