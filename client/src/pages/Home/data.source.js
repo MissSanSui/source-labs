@@ -192,7 +192,7 @@ export const Content00DataSource = {
               className: 'content0-block-title',
               children: 'Study',
             },
-            { name: 'content', children: '从技术试验中迸发灵感，无论是IT技术还是方案架构。在技术和社交能力上，提升自己。' },
+            { name: 'content', children: '参与技术试验，迸发灵感，无论是IT技术还是方案架构。在技术和社交能力上，提升自己。' },
           ],
         },
       },

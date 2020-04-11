@@ -22,7 +22,7 @@ const ProportionSales = memo(
         <div className={styles.salesCardExtra}>
           {dropdownGroup}
           <div className={styles.salesTypeRadio}>
-            <Radio.Group value={salesType} onChange={handleChangeSalesType}>
+            <Radio.Group value={'ssss'} onChange={handleChangeSalesType}>
               <Radio.Button value="all">
                 <FormattedMessage id="app.analysis.channel.all" defaultMessage="ALL" />
               </Radio.Button>

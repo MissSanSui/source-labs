@@ -28,12 +28,12 @@ const FormItem = Form.Item;
     // eslint-disable-next-line
     console.log(changedValues, allValues);
     // 模拟查询表单生效
-    dispatch({
-      type: 'list/fetch',
-      payload: {
-        count: 8,
-      },
-    });
+    // dispatch({
+    //   type: 'list/fetch',
+    //   payload: {
+    //     count: 8,
+    //   },
+    // });
   },
 })
 class CoverCardList extends PureComponent {
@@ -44,12 +44,12 @@ class CoverCardList extends PureComponent {
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch({
-      type: 'list/fetch',
-      payload: {
-        count: 8,
-      },
-    });
+    // dispatch({
+    //   type: 'list/fetch',
+    //   payload: {
+    //     count: 8,
+    //   },
+    // });
   }
 
   render() {

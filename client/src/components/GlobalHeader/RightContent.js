@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { FormattedMessage, formatMessage } from 'umi-plugin-react/locale';
-import { Spin, Tag, Menu, Icon, Avatar, Tooltip, message } from 'antd';
+import { Spin, Tag, Menu, Icon, Avatar, Tooltip, message, Radio } from 'antd';
 import moment from 'moment';
 import groupBy from 'lodash/groupBy';
 import NoticeIcon from '../NoticeIcon';
@@ -116,6 +116,14 @@ export default class GlobalHeaderRight extends PureComponent {
             console.log('enter', value); // eslint-disable-line
           }}
         />
+        <Radio.Group value={'sssss'}>
+              <Radio.Button value="all">
+                <FormattedMessage id="app.analysis.channel.all" defaultMessage="登录" />
+              </Radio.Button>
+              <Radio.Button value="stores">
+                <FormattedMessage id="app.analysis.channel.stores" defaultMessage="注册" />
+              </Radio.Button>
+            </Radio.Group>
         {/* <Tooltip title={formatMessage({ id: 'component.globalHeader.help' })}>
           <a
             target="_blank"
