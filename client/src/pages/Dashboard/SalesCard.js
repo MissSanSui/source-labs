@@ -27,6 +27,9 @@ const SalesCard = memo(
                 <a className={isActive('today')} onClick={() => selectDate('today')}>
                   <FormattedMessage id="app.analysis.all-day" defaultMessage="All Day" />
                 </a>
+                <a className={isActive('today')} onClick={() => selectDate('monginghix')}>
+                  <FormattedMessage id="app.analysis.all-day" defaultMessage="All Day" />
+                </a>
                 <a className={isActive('week')} onClick={() => selectDate('week')}>
                   <FormattedMessage id="app.analysis.all-week" defaultMessage="All Week" />
                 </a>
